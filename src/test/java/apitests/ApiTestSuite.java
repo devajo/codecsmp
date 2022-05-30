@@ -24,4 +24,12 @@ public class ApiTestSuite {
         then().
                 assertThat().statusCode(200).and().assertThat().body("localities.locality.postcode",equalTo(2250));
     }
+
+    @Test
+    public void TestGit(){
+        //test git
+    }
+
+
+
 }
