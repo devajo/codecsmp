@@ -67,6 +67,11 @@ public class FormPage{
 
     }
 
+    public String getAgreeError(){
+        WebElement agreeError=driver.findElement(By.id("agree-err"));
+        return  agreeError.getText();
+    }
+
 
 
 }

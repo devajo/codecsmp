@@ -31,7 +31,7 @@ public class BaseTestSuite {
     public static void Quit()
     {
         if (driver != null) {
-            //driver.quit();
+            driver.quit();
         }
     }
 }
