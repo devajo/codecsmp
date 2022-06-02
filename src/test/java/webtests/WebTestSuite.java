@@ -2,18 +2,16 @@
 package webtests;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import webtests.ui.FormPage;
 import webtests.ui.Menu;
 import webtests.ui.PlanetPage;
 
 
-import javax.swing.*;
-import java.nio.charset.StandardCharsets;
-import java.util.concurrent.TimeUnit;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 
 public class WebTestSuite extends BaseTestSuite
@@ -97,7 +95,6 @@ public class WebTestSuite extends BaseTestSuite
         var jupiter= planets.findPlanetTileByName("jupiter");
         Assertions.assertEquals("778,500,000 km",jupiter.getDistance());
 
-
     }
 
 
@@ -105,4 +102,7 @@ public class WebTestSuite extends BaseTestSuite
 
 
 
-    }
+}
+
+
+
